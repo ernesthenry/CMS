@@ -1,6 +1,7 @@
 <?php
 require_once('../../../private/initialize.php');
 
+//error reporting
 ini_set('display_errors', '1');
 ini_set('display_startup_errors', '1');
 error_reporting(E_ALL);
@@ -23,7 +24,7 @@ $subjects = [
     <h1>Subjects</h1>
 
     <div class="actions">
-      <a class="action" href="">Create New Subject</a>
+      <a class="action" href="<?php echo 'new.php'?>">Create New Subject</a>
     </div>
 
     <table class="list">
