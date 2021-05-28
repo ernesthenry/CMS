@@ -1,4 +1,4 @@
-<?php 
+<?php
 ini_set('display_errors', '1');
 ini_set('display_startup_errors', '1');
 error_reporting(E_ALL);
@@ -24,7 +24,7 @@ $subjects = [
     <h1>Subjects</h1>
 
     <div class="actions">
-      <a class="action" href="<?php echo url_for('/staff/subjects/new.php')?>">Create New Subject</a>
+      <a class="action" href="<?php echo url_for('/staff/subjects/new.php') ?>">Create New Subject</a>
     </div>
 
     <table class="list">
@@ -45,7 +45,7 @@ $subjects = [
           <td><?php echo $subject['visible'] == 1 ? 'true' : 'false'; ?></td>
           <td><?php echo h($subject['menu_name']); ?></td>
           <td><a class="action" href="<?php echo url_for('/staff/subjects/show.php?id=' . h(u($subject['id']))); ?>">View</a></td>
-          <td><a class="action" href="<?php echo url_for('/staff/subjects/edit.php?id='. h(u($subject['id'])))?>">Edit</a></td>
+          <td><a class="action" href="<?php echo url_for('/staff/subjects/edit.php?id=' . h(u($subject['id']))); ?>">Edit</a></td>
           <td><a class="action" href="">Delete</a></td>
         </tr>
       <?php } ?>
@@ -56,4 +56,3 @@ $subjects = [
 </div>
 
 <?php include(SHARED_PATH . '/staff_footer.php'); ?>
-
