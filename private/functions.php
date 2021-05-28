@@ -25,6 +25,20 @@ function error_404(){
 function error_500(){
     header($_SERVER['SERVER_PROTOCOL']. ' 500 Internal server error');
     exit();
-
 }
+
+function redirect_to($location){
+    header("Location:" . $location);
+    exit;
+}
+
+function is_post_request(){
+    return $_SERVER['REQUEST_METHOD'] == 'POST';
+}
+
+function is_get_request(){
+    return $_SERVER['REQUEST_METHOD'] == 'GET';
+}
+
+
 ?>
