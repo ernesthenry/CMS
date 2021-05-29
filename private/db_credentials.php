@@ -1,8 +1,8 @@
 <?php
 
-define('DB_SERVER', '127.0.0.1');
-define('DB_USER', 'root');
-define('DB_PASS', '123@Ernest');
-define('DB_NAME', 'test');
+define('DB_SERVER', '207.244.77.80');
+define('DB_USER', 'testDB');
+define('DB_PASS', 'testDB');
+define('DB_NAME', 'testDB');
 
 ?>
